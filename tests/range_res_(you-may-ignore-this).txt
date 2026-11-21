@@ -1,0 +1,78 @@
+Range test at 48000 Hz (carriers=(18200, 18600, 19000, 19400) Hz, level=0.50); devices=(1, 7)
+
+Interactive Range Test: place the microphone at each distance and press Enter.
+Type a distance label (e.g. '25cm', '50cm', '1m', '2m') or 'q' to finish.
+
+Enter distance label [default=25cm, 'q'=quit]: 1m
+
+--- Testing distance: 1m (3 packet(s) at level=0.50) ---
+  [1/3] PASS corr=0.772 symbol_SNR=10.5dB fec=3 inband_RMS=0.00015 wide_RMS=0.00034
+  [2/3] FAIL inband_RMS=0.00015 wide_RMS=0.00042 | chirp corr=0.849 at 24531; header=d3 01 02 0f; full-frame symbol SNR=8.5 dB, RS failed
+  [3/3] FAIL inband_RMS=0.00013 wide_RMS=0.00039 | chirp corr=0.614 at 24625; header=d3 00 03 0f; full-frame symbol SNR=8.5 dB, RS failed
+Summary [1m]: 1/3 (33%) packets decoded | avg corr=0.772 (min 0.772) | avg symbol SNR=10.5 dB | max FEC=3/4 | carriers=[18200Hz:39.1dB, 18600Hz:36.5dB, 19000Hz:34.7dB, 19400Hz:31.1dB]
+
+Enter distance label [default=50cm, 'q'=quit]: 1m
+
+--- Testing distance: 1m (3 packet(s) at level=0.50) ---
+  [1/3] PASS corr=0.680 symbol_SNR=10.4dB fec=0 inband_RMS=0.00021 wide_RMS=0.00099 delay_delta=+62 samp (~+44 cm)
+  [2/3] PASS corr=0.770 symbol_SNR=13.0dB fec=0 inband_RMS=0.00036 wide_RMS=0.00085 delay_delta=-462 samp (~-330 cm)
+  [3/3] PASS corr=0.824 symbol_SNR=13.9dB fec=0 inband_RMS=0.00024 wide_RMS=0.00046 delay_delta=-131 samp (~-94 cm)
+Summary [1m]: 3/3 (100%) packets decoded | avg corr=0.758 (min 0.680) | avg symbol SNR=12.4 dB | max FEC=0/4 | carriers=[18200Hz:37.9dB, 18600Hz:41.0dB, 19000Hz:40.5dB, 19400Hz:35.5dB]
+
+Enter distance label [default=100cm, 'q'=quit]: 5m
+
+--- Testing distance: 5m (3 packet(s) at level=0.50) ---
+  [1/3] FAIL inband_RMS=0.00098 wide_RMS=0.00508 | chirp corr=0.578 at 25145; header=f7 c1 00 0c; sync byte or length is wrong
+  [2/3] FAIL inband_RMS=0.00010 wide_RMS=0.00033 | chirp corr=0.673 at 25292; header=d0 01 02 0f; sync byte or length is wrong
+  [3/3] FAIL inband_RMS=0.00058 wide_RMS=0.00070 | chirp corr=0.681 at 24950; header=f7 c0 40 03; sync byte or length is wrong
+Summary [5m]: 0/3 (0%) decoded | carriers=[18200Hz:32.1dB, 18600Hz:31.1dB, 19000Hz:27.7dB, 19400Hz:23.0dB] | Tip: increase --level (e.g. 0.6-0.9), raise speaker volume, or try --band near
+
+Enter distance label [default=150cm, 'q'=quit]: 3m
+
+--- Testing distance: 3m (3 packet(s) at level=0.50) ---
+  [1/3] FAIL inband_RMS=0.00024 wide_RMS=0.00086 | chirp corr=0.391 at 25035; header=d0 01 01 10; sync byte or length is wrong
+  [2/3] FAIL inband_RMS=0.00030 wide_RMS=0.00047 | chirp corr=0.640 at 24740; header=d1 41 06 80; sync byte or length is wrong
+  [3/3] PASS corr=0.518 symbol_SNR=9.9dB fec=1 inband_RMS=0.00015 wide_RMS=0.00100 delay_delta=-724 samp (~-517 cm)
+Summary [3m]: 1/3 (33%) packets decoded | avg corr=0.518 (min 0.518) | avg symbol SNR=9.9 dB | max FEC=1/4 | carriers=[18200Hz:32.6dB, 18600Hz:35.9dB, 19000Hz:33.9dB, 19400Hz:28.8dB]
+
+Enter distance label [default=200cm, 'q'=quit]: 4m
+
+--- Testing distance: 4m (3 packet(s) at level=0.50) ---
+  [1/3] FAIL inband_RMS=0.00091 wide_RMS=0.00326 | chirp corr=0.361 at 24268; header=d3 01 01 0f; full-frame symbol SNR=11.2 dB, RS failed
+  [2/3] PASS corr=0.626 symbol_SNR=13.5dB fec=1 inband_RMS=0.00022 wide_RMS=0.00076 delay_delta=-73 samp (~-52 cm)
+  [3/3] FAIL inband_RMS=0.00017 wide_RMS=0.00046 | chirp corr=0.535 at 24215; header=b4 c0 40 c3; sync byte or length is wrong
+Summary [4m]: 1/3 (33%) packets decoded | avg corr=0.626 (min 0.626) | avg symbol SNR=13.5 dB | max FEC=1/4 | carriers=[18200Hz:34.3dB, 18600Hz:35.4dB, 19000Hz:27.0dB, 19400Hz:27.6dB]
+
+Enter distance label [default=300cm, 'q'=quit]: 5m
+
+--- Testing distance: 5m (3 packet(s) at level=0.50) ---
+  [1/3] FAIL inband_RMS=0.00025 wide_RMS=0.00188 | chirp corr=0.713 at 24625; header=d3 01 01 0f; full-frame symbol SNR=8.6 dB, RS failed
+  [2/3] FAIL inband_RMS=0.00019 wide_RMS=0.00075 | chirp corr=0.607 at 25326; header=d3 01 02 0f; full-frame symbol SNR=7.8 dB, RS failed
+  [3/3] FAIL inband_RMS=0.00027 wide_RMS=0.00729 | chirp corr=0.573 at 25229; header=d3 01 03 0f; full-frame symbol SNR=8.1 dB, RS failed
+Summary [5m]: 0/3 (0%) decoded | carriers=[18200Hz:33.4dB, 18600Hz:30.0dB, 19000Hz:33.0dB, 19400Hz:26.4dB] | Tip: increase --level (e.g. 0.6-0.9), raise speaker volume, or try --band near
+
+Enter distance label [default=300cm, 'q'=quit]: 4m
+
+--- Testing distance: 4m (3 packet(s) at level=0.50) ---
+  [1/3] FAIL inband_RMS=0.00165 wide_RMS=0.00271 | chirp corr=0.486 at 24457; header=d3 01 01 0f; full-frame symbol SNR=9.2 dB, RS failed
+  [2/3] FAIL inband_RMS=0.00026 wide_RMS=0.00228 | chirp corr=0.641 at 24227; header=d3 01 00 0f; full-frame symbol SNR=8.2 dB, RS failed
+  [3/3] PASS corr=0.642 symbol_SNR=12.1dB fec=3 inband_RMS=0.00023 wide_RMS=0.00137 delay_delta=-524 samp (~-374 cm)
+Summary [4m]: 1/3 (33%) packets decoded | avg corr=0.642 (min 0.642) | avg symbol SNR=12.1 dB | max FEC=3/4 | carriers=[18200Hz:27.8dB, 18600Hz:31.8dB, 19000Hz:24.4dB, 19400Hz:28.7dB]
+
+Enter distance label [default=300cm, 'q'=quit]: 5m
+
+--- Testing distance: 5m (3 packet(s) at level=0.50) ---
+  [1/3] FAIL inband_RMS=0.00102 wide_RMS=0.00146 | chirp corr=0.223 at 27995; header=40 13 d3 12; sync byte or length is wrong
+  [2/3] PASS corr=0.638 symbol_SNR=10.9dB fec=0 inband_RMS=0.00016 wide_RMS=0.00036 delay_delta=+8 samp (~+6 cm)
+  [3/3] PASS corr=0.684 symbol_SNR=10.4dB fec=2 inband_RMS=0.00069 wide_RMS=0.00116 delay_delta=-715 samp (~-511 cm)
+Summary [5m]: 2/3 (67%) packets decoded | avg corr=0.661 (min 0.638) | avg symbol SNR=10.6 dB | max FEC=2/4 | carriers=[18200Hz:36.5dB, 18600Hz:37.5dB, 19000Hz:32.3dB, 19400Hz:30.1dB]
+
+Enter distance label [default=300cm, 'q'=quit]: 5m
+
+--- Testing distance: 5m (3 packet(s) at level=0.50) ---
+  [1/3] FAIL inband_RMS=0.00235 wide_RMS=0.00366 | chirp corr=0.272 at 45466; header=25 1a 94 54; sync byte or length is wrong
+  [2/3] FAIL inband_RMS=0.00020 wide_RMS=0.00036 | chirp corr=0.518 at 25498; header=d3 01 4a 3d; capture ends before complete frame
+  [3/3] FAIL inband_RMS=0.00029 wide_RMS=0.00048 | chirp corr=0.434 at 24904; header=f0 c0 03 0f; sync byte or length is wrong
+Summary [5m]: 0/3 (0%) decoded | carriers=[18200Hz:27.0dB, 18600Hz:27.6dB, 19000Hz:25.8dB, 19400Hz:24.6dB] | Tip: increase --level (e.g. 0.6-0.9), raise speaker volume, or try --band near
+
+Enter distance label [default=300cm, 'q'=quit]: q
