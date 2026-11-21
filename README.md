@@ -70,6 +70,8 @@ unit tests / sim:
 python -m unittest discover -s tests -v
 python air.py --sim "test"
 ```
-proof it works okay:
+proof it works okay: </br>
 <img width="408" height="89" alt="image" src="https://github.com/user-attachments/assets/b2cbee5b-c2b3-478f-bf42-a30badb68b90" />
+<br/>
+ignore the other analysis data thats for me to figure out if somethings wrong or if its actually working or not. Just see the rx (received) message and the thing I'm sending.
 
